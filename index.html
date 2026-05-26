@@ -1,0 +1,325 @@
+<!DOCTYPE html><html lang="pt-BR"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atendimento - Seu Plano Completo</title>
+    <script src="3.4.17"></script>
+    <link rel="stylesheet" href="css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        marine: '#006D77',
+                        marineLight: '#83C5BE',
+                        marineLighter: '#EDF6F9'
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        @import url('css2');
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f8fafc;
+        }
+
+        .hero-gradient {
+            background: linear-gradient(135deg, #006D77 0%, #83C5BE 100%);
+        }
+
+        .floating-card {
+            box-shadow: 0 10px 25px -5px rgba(0, 109, 119, 0.3);
+        }
+
+        .feature-card:hover {
+            transform: translateY(-5px);
+            transition: all 0.3s ease;
+        }
+
+        .pulse-animation {
+            animation: pulse 2s infinite;
+        }
+
+        @keyframes pulse {
+            0% {
+                box-shadow: 0 0 0 0 rgba(0, 109, 119, 0.7);
+            }
+
+            70% {
+                box-shadow: 0 0 0 10px rgba(0, 109, 119, 0);
+            }
+
+            100% {
+                box-shadow: 0 0 0 0 rgba(0, 109, 119, 0);
+            }
+        }
+
+        .whatsapp-btn {
+            transition: all 0.3s ease;
+        }
+
+        .whatsapp-btn:hover {
+            background-color: #25D366;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Header/Navigation -->
+    <header class="bg-white shadow-sm">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <div class="flex items-center">
+                <div class="w-12 h-12 rounded-full bg-marine flex items-center justify-center mr-3">
+                    <i class=""></i>
+                </div>
+                <h1 class="text-2xl font-bold text-marine">Portal do <span class="font-light">Cliente</span></h1>
+            </div>
+
+            <nav class="hidden md:flex space-x-8">
+                <a href="#services" class="text-gray-600 hover:text-marine font-medium">Serviços</a>
+                <a href="#plans" class="text-gray-600 hover:text-marine font-medium">Planos</a>
+                <a href="#about" class="text-gray-600 hover:text-marine font-medium">Sobre Nós</a>
+                <a href="#contact" class="text-gray-600 hover:text-marine font-medium">Contato</a>
+            </nav>
+
+            <div class="flex items-center space-x-4">
+                <a href="#client-portal" class="hidden md:block bg-marine hover:bg-marineLight text-white px-4 py-2 rounded-full font-medium transition-colors">
+                    Portal do Cliente
+                </a>
+                <button class="md:hidden text-gray-600">
+                    <i class="fas fa-bars text-xl"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-gradient text-white">
+        <div class="container mx-auto px-4 py-16 md:py-24">
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 mb-10 md:mb-0">
+                    <h2 class="text-4xl md:text-5xl font-bold mb-4">Cuidando de você como ninguém</h2>
+                    <p class="text-xl mb-8 opacity-90">A Unimed Saúde oferece os melhores planos de saúde com cobertura
+                        nacional e atendimento personalizado.</p>
+
+                    <div class="flex flex-col sm:flex-row space-y-3 sm:space-y-0 sm:space-x-4">
+                        <a href="https://wa.me/11978815705" class="bg-white text-marine px-6 py-3 rounded-full font-bold text-center hover:bg-gray-100 transition-colors">
+                            Segunda Via Boleto
+                        </a>
+                    </div>
+                </div>
+
+                <div class="md:w-1/2 flex justify-center">
+                    <div class="relative">
+                        <div class="bg-white rounded-2xl p-6 floating-card w-full max-w-md">
+                            <h3 class="text-marine text-xl font-bold mb-4">Acesso Rápido</h3>
+
+                            <div class="space-y-4">
+                                <a href="https://wa.me/11978815705" target="_blank" class="block bg-marineLighter hover:bg-marineLight text-marine p-4 rounded-lg font-medium transition-colors flex items-center">
+                                    <i class="fas fa-file-invoice-dollar mr-3 text-lg"></i>
+                                    Emitir 2ª via de boleto
+                                </a>
+
+                                <a href="https://wa.me/11978815705" target="_blank" class="block bg-marineLighter hover:bg-marineLight text-marine p-4 rounded-lg font-medium transition-colors flex items-center">
+                                    <i class="fas fa-clock mr-3 text-lg"></i>
+                                    Regularizar fatura em atraso
+                                </a>
+
+                                <a href="https://wa.me/11978815705" target="_blank" class="block bg-marineLighter hover:bg-marineLight text-marine p-4 rounded-lg font-medium transition-colors flex items-center">
+                                    <i class="fas fa-hand-holding-usd mr-3 text-lg"></i>
+                                    Antecipar faturas
+                                </a>
+
+                                <a href="https://wa.me/11978815705" target="_blank" class="block bg-marineLighter hover:bg-marineLight text-marine p-4 rounded-lg font-medium transition-colors flex items-center">
+                                    <i class="fas fa-headset mr-3 text-lg"></i>
+                                    Atendimento ao Cliente
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="absolute -bottom-5 -right-5 bg-white p-3 rounded-full shadow-lg pulse-animation">
+                            <div class="w-16 h-16 bg-marine rounded-full flex items-center justify-center">
+                                <a href="https://wa.me/11978815705" target="_blank" class="text-white text-2xl">
+                                    <i class="fab fa-whatsapp"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-marine mb-4">Nossos Serviços</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">Oferecemos uma gama completa de serviços para atender todas
+                    as suas necessidades de saúde.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="bg-white rounded-xl p-6 shadow-sm feature-card transition-transform">
+                    <div class="w-14 h-14 bg-marineLighter rounded-full flex items-center justify-center mb-4 text-marine">
+                        <i class="fas fa-file-invoice text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-marine mb-2">2ª Via de Boleto</h3>
+                    <p class="text-gray-600">Emita facilmente a segunda via do seu boleto a qualquer momento.</p>
+                </div>
+
+                <div class="bg-white rounded-xl p-6 shadow-sm feature-card transition-transform">
+                    <div class="w-14 h-14 bg-marineLighter rounded-full flex items-center justify-center mb-4 text-marine">
+                        <i class="fas fa-hand-holding-usd text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-marine mb-2">Faturas em Atraso</h3>
+                    <p class="text-gray-600">Regularize suas faturas pendentes e mantenha seu plano ativo.</p>
+                </div>
+
+                <div class="bg-white rounded-xl p-6 shadow-sm feature-card transition-transform">
+                    <div class="w-14 h-14 bg-marineLighter rounded-full flex items-center justify-center mb-4 text-marine">
+                        <i class="fas fa-calendar-plus text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-marine mb-2">Antecipar Faturas</h3>
+                    <p class="text-gray-600">Antecipe pagamentos futuros e organize melhor seu orçamento.</p>
+                </div>
+
+                <div class="bg-white rounded-xl p-6 shadow-sm feature-card transition-transform">
+                    <div class="w-14 h-14 bg-marineLighter rounded-full flex items-center justify-center mb-4 text-marine">
+                        <i class="fas fa-comments text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-marine mb-2">Atendimento</h3>
+                    <p class="text-gray-600">Nossa equipe está pronta para te ajudar com qualquer dúvida.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Client Portal Section -->
+    <section id="client-portal" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col lg:flex-row items-center">
+                <div class="lg:w-1/2 mb-10 lg:mb-0 lg:pr-10">
+    <h2 class="text-3xl font-bold text-marine mb-4">Portal do Cliente</h2>
+    <p class="text-gray-600 mb-6">Acesse seu portal exclusivo e realize as principais ações relacionadas ao seu plano:</p>
+
+    <ul class="space-y-3 mb-8">
+        <li class="flex items-start">
+            <i class="fas fa-check-circle text-marine mt-1 mr-3"></i>
+            <span>Emita a 2ª via do seu boleto</span>
+        </li>
+        <li class="flex items-start">
+            <i class="fas fa-check-circle text-marine mt-1 mr-3"></i>
+            <span>Regularize faturas em atraso</span>
+        </li>
+        <li class="flex items-start">
+            <i class="fas fa-check-circle text-marine mt-1 mr-3"></i>
+            <span>Antecipe faturas futuras</span>
+        </li>
+        <li class="flex items-start">
+            <i class="fas fa-check-circle text-marine mt-1 mr-3"></i>
+            <span>Solicite o cancelamento do seu plano</span>
+        </li>
+    </ul>
+
+    <a href="https://wa.me/11978815705" target="_blank" class="inline-block bg-marine hover:bg-marineLight text-white px-6 py-3 rounded-full font-bold transition-colors">
+        Acessar Portal do Cliente
+    </a>
+</div>
+
+
+
+            </div>
+        </div>
+    </section>
+
+    <!-- WhatsApp Button -->
+    <div class="fixed bottom-6 right-6 z-50">
+        <a href="https://wa.me/11978815705" target="_blank" class="whatsapp-btn bg-white text-green-600 w-14 h-14 rounded-full flex items-center justify-center shadow-lg text-2xl hover:text-white">
+            <i class="fab fa-whatsapp"></i>
+        </a>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white pt-12 pb-6">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4"></h3>
+                    <p class="text-gray-400">Cuidando de você e sua família com os melhores planos de saúde do mercado.
+                    </p>
+                </div>
+
+                <div>
+                    <h4 class="font-bold mb-4">Links Úteis</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-white">2ª Via de Boleto</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Faturas em Atraso</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Antecipar Faturas</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Portal do Cliente</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="font-bold mb-4">Atendimento</h4>
+                    <ul class="space-y-2">
+                     
+                        <li class="text-gray-400"><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="3f5e4b5a515b56525a514b507f5c5e515e534a5156525a49564d4b4a5e53114c564b5a">[email�protected]</a>
+                        </li>
+                        <li class="text-gray-400">Seg a Sex: 8h às 20h</li>
+                        <li class="text-gray-400">Rua Aquilina Bonatti Malavazzi, B - MALAVAZZI, 105 - Jardim Vista Alegre, Paulínia - São Paulo, 13140-188</li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="font-bold mb-4">Redes Sociais</h4>
+                    <div class="flex space-x-4">
+                        <a class="text-gray-400 hover:text-white text-xl"><i class="fab fa-facebook"></i></a>
+                        <a class="text-gray-400 hover:text-white text-xl"><i class="fab fa-instagram"></i></a>
+                        <a class="text-gray-400 hover:text-white text-xl"><i class="fab fa-linkedin"></i></a>
+                        <a class="text-gray-400 hover:text-white text-xl"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="border-t border-gray-800 pt-6 text-center text-gray-400">
+                <p>© 2025 Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script data-cfasync="false" src="js/email-decode.min.js"></script>
+    <script>
+        // Simple animation for demonstration
+        document.addEventListener('DOMContentLoaded', function () {
+            const featureCards = document.querySelectorAll('.feature-card');
+
+            featureCards.forEach(card => {
+                card.addEventListener('mouseenter', function () {
+                    this.style.transform = 'translateY(-5px)';
+                });
+
+                card.addEventListener('mouseleave', function () {
+                    this.style.transform = 'translateY(0)';
+                });
+            });
+
+            // WhatsApp button animation
+            const whatsappBtn = document.querySelector('.whatsapp-btn');
+
+            whatsappBtn.addEventListener('mouseenter', function () {
+                this.classList.add('animate-bounce');
+            });
+
+            whatsappBtn.addEventListener('mouseleave', function () {
+                this.classList.remove('animate-bounce');
+            });
+        });
+    </script>
+    <script defer="" src="vcd15cbe7772f49c399c6a5babf22c1241717689176015" data-cf-beacon="{" version":"2024.11.0","token":"2ad3c1d0293c4f9789334f676673f032","r":1,"server_timing":{"name":{"cfcachestatus":true,"cfedge":true,"cfextpri":true,"cfl4":true,"cforigin":true,"cfspeedbrain":true},"location_startswith":null}}"="" crossorigin="anonymous"></script>
+
+
+</body></html>
