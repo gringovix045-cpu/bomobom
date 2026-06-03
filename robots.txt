@@ -1,9 +1,0 @@
-# robots.txt — atualize a URL do Sitemap com o seu domínio real
-User-agent: *
-Allow: /
-
-Disallow: /includes/
-Disallow: /images/
-
-# Troque pela URL real do seu sitemap:
-Sitemap: https://www.seusite.com.br/sitemap.php
